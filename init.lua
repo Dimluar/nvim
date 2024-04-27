@@ -71,6 +71,16 @@ vim.opt.scrolloff = 10
 -- [[ Basic Keymaps ]]
 --  See `:help vim.keymap.set()`
 
+-- Fast insert/visual mode exit
+vim.keymap.set({ 'i', 'v' }, 'jf', '<Esc>')
+
+-- Center cursor on <C-d>/<C-u>
+vim.keymap.set('n', '<C-d>', '<C-d>zz')
+vim.keymap.set('n', '<C-u>', '<C-u>zz')
+
+-- Go to file directory
+vim.keymap.set('n', '-', vim.cmd.Ex)
+
 -- Set highlight on search, but clear on pressing <Esc> in normal mode
 vim.opt.hlsearch = true
 vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
