@@ -1,0 +1,14 @@
+local M = {}
+
+function M.SetColorScheme(color, bg)
+  color = color or 'tokyonight-night'
+  bg = bg or false
+  vim.cmd.colorscheme(color)
+
+  if not bg then
+    vim.api.nvim_set_hl(0, 'Normal', { bg = 'none' })
+    vim.api.nvim_set_hl(0, 'NormalFloat', { bg = 'none' })
+  end
+end
+
+return M

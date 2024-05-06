@@ -1,3 +1,5 @@
+local colors = require 'custom.colors'
+
 -- Set <space> as the leader key
 -- See `:help mapleader`
 --  NOTE: Must happen before plugins are loaded (otherwise wrong leader will be used)
@@ -683,7 +685,7 @@ require('lazy').setup({
       -- Load the colorscheme here.
       -- Like many other themes, this one has different styles, and you could load
       -- any other, such as 'tokyonight-storm', 'tokyonight-moon', or 'tokyonight-day'.
-      vim.cmd.colorscheme 'tokyonight-night'
+      colors.SetColorScheme()
 
       -- You can configure highlights by doing something like:
       vim.cmd.hi 'Comment gui=none'
