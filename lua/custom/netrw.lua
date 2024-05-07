@@ -45,9 +45,9 @@ vim.api.nvim_create_autocmd('filetype', {
     bind('<C-l>', '<C-w>l')
 
     -- Open on vertical split
-    bind('v', '<CR>:vsplit<CR><C-w>h<C-o><C-w>l')
+    bind('V', '<C-w>l:vsplit<CR><C-w>h<C-w>h<CR><C-w>L')
 
     -- Open on horizontal split
-    bind('h', '<CR>:split<CR><C-w>k<C-o><C-w>j')
+    bind('H', '<C-w>l:split<CR><C-w>h<CR>')
   end,
 })
