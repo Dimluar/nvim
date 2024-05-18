@@ -83,7 +83,7 @@ require 'custom.netrw'
 --  See `:help vim.keymap.set()`
 
 -- Fast insert/visual mode exit
-vim.keymap.set({ 'i', 'v' }, 'jf', '<Esc>')
+-- vim.keymap.set({ 'i', 'v' }, 'jf', '<Esc>')
 
 -- Center cursor on <C-d>/<C-u>
 vim.keymap.set('n', '<C-d>', '<C-d>zz')
