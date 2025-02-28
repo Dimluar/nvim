@@ -1,7 +1,7 @@
 local M = {}
 
 function M.SetColorScheme(color, bg)
-  color = color or 'tokyonight-night'
+  color = color or 'catppuccin'
   bg = bg or false
   vim.cmd.colorscheme(color)
 
